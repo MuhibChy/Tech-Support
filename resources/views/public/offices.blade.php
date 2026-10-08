@@ -92,10 +92,15 @@
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto">
             @php
             $servedCountries = App\Models\Country::where('is_active', true)->orderBy('name')->get();
+            $countryFlags = [
+                'US' => '🇺🇸', 'GB' => '🇬🇧', 'BD' => '🇧🇩', 'SG' => '🇸🇬',
+                'AE' => '🇦🇪', 'AU' => '🇦🇺', 'DE' => '🇩🇪', 'FR' => '🇫🇷',
+                'CA' => '🇨🇦', 'IN' => '🇮🇳'
+            ];
             @endphp
             @forelse($servedCountries as $country)
             <div class="flex items-center gap-2.5 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-cyan-500/30 hover:bg-white/[0.06] transition-all">
-                <span class="text-lg">{{ strtoupper($country->code) === 'US' ? '🇺🇸' : strtoupper($country->code) === 'GB' ? '🇬🇧' : strtoupper($country->code) === 'BD' ? '🇧🇩' : strtoupper($country->code) === 'SG' ? '🇸🇬' : strtoupper($country->code) === 'AE' ? '🇦🇪' : strtoupper($country->code) === 'AU' ? '🇦🇺' : strtoupper($country->code) === 'DE' ? '🇩🇪' : strtoupper($country->code) === 'FR' ? '🇫🇷' : strtoupper($country->code) === 'CA' ? '🇨🇦' : strtoupper($country->code) === 'IN' ? '🇮🇳' : '🌍' }}</span>
+                <span class="text-lg">{{ $countryFlags[strtoupper($country->code)] ?? '🌍' }}</span>
                 <div>
                     <div class="text-sm font-medium text-white">{{ $country->name }}</div>
                     <div class="text-xs text-slate-500">{{ $country->currency_code }}</div>

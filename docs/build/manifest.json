@@ -1,0 +1,32 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-66af8ea7.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "dynamicImports": [
+      "resources/js/role-bg.js",
+      "resources/js/hero-3d.js",
+      "resources/js/cosmic-bg.js"
+    ],
+    "file": "assets/app-bbe5767c.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/cosmic-bg.js": {
+    "file": "assets/cosmic-bg-293010b6.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/cosmic-bg.js"
+  },
+  "resources/js/hero-3d.js": {
+    "file": "assets/hero-3d-9fbf62cc.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/hero-3d.js"
+  },
+  "resources/js/role-bg.js": {
+    "file": "assets/role-bg-668fbdb3.js",
+    "isDynamicEntry": true,
+    "src": "resources/js/role-bg.js"
+  }
+}

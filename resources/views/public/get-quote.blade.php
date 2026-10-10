@@ -65,7 +65,7 @@
                             <label for="phone" class="block text-sm font-semibold text-slate-300 mb-2">Phone Number</label>
                             <input type="tel" id="phone" name="phone"
                                    class="w-full px-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-brand-500/60 focus:ring-1 focus:ring-brand-500/30 transition-all"
-                                   placeholder="+1 (555) 123-4567" value="{{ old('phone') }}">
+                                   placeholder="Your contact number" value="{{ old('phone') }}">
                         </div>
                         <div>
                             <label for="company" class="block text-sm font-semibold text-slate-300 mb-2">Company Name</label>
@@ -158,8 +158,8 @@
                     </div>
 
                     <button type="submit"
-                            class="w-full sm:w-auto px-8 py-4 rounded-2xl text-white font-bold text-base transition-all duration-300 hover:scale-105"
-                            style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 10px 35px rgba(37,99,235,0.45);">
+                            class="w-full sm:w-auto px-8 py-4 rounded-2xl text-white font-bold text-base transition-all duration-300 hover:scale-105 btn-brand-gradient"
+                            style=" box-shadow: 0 10px 35px rgba(37,99,235,0.45);">
                         Submit Quote Request
                         <svg class="w-5 h-5 ml-2 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
                     </button>
@@ -191,21 +191,28 @@
                     </div>
                 </div>
 
-                {{-- Contact info --}}
+                {{-- Contact info (owner-verified details only) --}}
                 <div class="cosmic-glass p-8 rounded-3xl border border-white/10">
                     <h3 class="text-xl font-bold text-white mb-6">Prefer to Talk?</h3>
                     <div class="space-y-4">
-                        <a href="tel:+15551234567" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
+                        @if(config('app.support_phone'))
+                        <a href="{{ config('app.support_phone_href') ? 'tel:'.config('app.support_phone_href') : route('contact') }}" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
                             <svg class="w-5 h-5 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                            +1 (555) 123-4567
+                            {{ config('app.support_phone') }}
                         </a>
-                        <a href="mailto:info@techsupport.com" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
+                        @endif
+                        @if(config('app.support_email'))
+                        <a href="mailto:{{ config('app.support_email') }}" class="flex items-center gap-3 text-slate-300 hover:text-brand-400 transition-colors">
                             <svg class="w-5 h-5 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                            info@techsupport.com
+                            {{ config('app.support_email') }}
                         </a>
+                        @endif
+                        @if(!config('app.support_phone') && !config('app.support_email'))
+                        <p class="text-sm text-slate-300">Use the <a href="{{ route('contact') }}" class="text-brand-400 hover:text-white transition-colors">contact page</a> to reach our team.</p>
+                        @endif
                         <div class="flex items-center gap-3 text-slate-300">
                             <svg class="w-5 h-5 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            Response within 24 hours
+                            {{ config('app.support_hours') }}
                         </div>
                     </div>
                 </div>
@@ -214,20 +221,20 @@
                 <div class="cosmic-glass p-8 rounded-3xl border border-white/10">
                     <div class="grid grid-cols-2 gap-4 text-center">
                         <div>
-                            <div class="text-2xl font-black text-white">250+</div>
-                            <div class="text-xs text-slate-400 mt-1">Clients Worldwide</div>
+                            <div class="text-lg font-black text-white">Structured</div>
+                            <div class="text-xs text-slate-400 mt-1">Quote Workflow</div>
                         </div>
                         <div>
-                            <div class="text-2xl font-black text-brand-400">99.9%</div>
-                            <div class="text-xs text-slate-400 mt-1">Uptime SLA</div>
+                            <div class="text-lg font-black text-brand-400">Tracked</div>
+                            <div class="text-xs text-slate-400 mt-1">Order Progress</div>
                         </div>
                         <div>
-                            <div class="text-2xl font-black text-white">15min</div>
-                            <div class="text-xs text-slate-400 mt-1">Critical Response</div>
+                            <div class="text-lg font-black text-white">Portal</div>
+                            <div class="text-xs text-slate-400 mt-1">Ticket Updates</div>
                         </div>
                         <div>
-                            <div class="text-2xl font-black text-brand-400">24/7</div>
-                            <div class="text-xs text-slate-400 mt-1">Emergency Support</div>
+                            <div class="text-lg font-black text-brand-400">Clear</div>
+                            <div class="text-xs text-slate-400 mt-1">Invoicing</div>
                         </div>
                     </div>
                 </div>

@@ -84,7 +84,7 @@
     <div class="relative z-10 max-w-[1000px] mx-auto px-6 text-center">
         <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-6">Discuss Your Own Scenario</h2>
         <p class="text-lg text-slate-300 mb-8 leading-relaxed">Tell us about your environment and we will propose a tailored assessment.</p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold btn-brand-gradient" style=" box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
             Start Your Project
         </a>
     </div>

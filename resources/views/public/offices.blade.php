@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
-@section('title', 'Global Offices — Our International Presence')
-@section('description', 'TechSupport Solutions operates from strategic locations across the globe, providing 24/7 IT support, cybersecurity, and cloud services to enterprises worldwide.')
+@section('title', 'Service Regions — Where We Operate')
+@section('description', 'Our team provides remote IT support, cybersecurity, and cloud services across multiple regions. Contact us for engagement options in your area.')
 
 @section('content')
 
@@ -14,11 +14,11 @@
             Global Presence
         </div>
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-tight mb-6">
-            Operating Across<br>
-            <span class="gradient-text-cyber">15+ Countries</span>
+            Support Across<br>
+            <span class="gradient-text-cyber">Multiple Regions</span>
         </h1>
         <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-            Our strategic global presence ensures we deliver 24/7/365 support with local expertise and international standards.
+            We deliver remote-first IT support with on-site options by arrangement. Reach out to discuss coverage in your area.
         </p>
     </div>
 </section>
@@ -28,10 +28,10 @@
     <div class="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             @foreach([
-                ['value' => '15+', 'label' => 'Countries', 'color' => 'text-cyan-400'],
-                ['value' => '24/7', 'label' => 'Global Coverage', 'color' => 'text-emerald-400'],
-                ['value' => '5', 'label' => 'Continents', 'color' => 'text-violet-400'],
-                ['value' => '500+', 'label' => 'Team Members', 'color' => 'text-blue-400'],
+                ['value' => 'Remote-first', 'label' => 'Delivery Model', 'color' => 'text-cyan-400'],
+                ['value' => 'Multi-region', 'label' => 'Service Coverage', 'color' => 'text-emerald-400'],
+                ['value' => 'Flexible', 'label' => 'Engagement Options', 'color' => 'text-violet-400'],
+                ['value' => 'Portal-based', 'label' => 'Support Tracking', 'color' => 'text-blue-400'],
             ] as $stat)
             <div class="text-center">
                 <div class="text-3xl lg:text-4xl font-black {{ $stat['color'] }}">{{ $stat['value'] }}</div>
@@ -46,18 +46,18 @@
 <section class="relative w-full py-20 lg:py-28 bg-[#020617] border-b border-white/10 z-10">
     <div class="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16">
         <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">Regional Headquarters</h2>
-            <p class="text-base text-slate-400">Each office serves as a regional hub for operations, client engagement, and talent development.</p>
+            <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">Regional Coverage</h2>
+            <p class="text-base text-slate-400">Example service regions below — availability and on-site options are confirmed per engagement. Contact us for details in your area.</p>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach([
-                ['city' => 'London', 'country' => 'United Kingdom', 'flag' => '🇬🇧', 'region' => 'EMEA HQ', 'address' => '1 Canada Square, Canary Wharf, London E14 5AB', 'phone' => '+44 20 7946 0958', 'services' => ['Cybersecurity', 'Penetration Testing', 'IT Consulting'], 'timezone' => 'GMT/BST'],
-                ['city' => 'New York', 'country' => 'United States', 'flag' => '🇺🇸', 'region' => 'Americas HQ', 'address' => '1 World Trade Center, New York, NY 10007', 'phone' => '+1 (212) 555-0100', 'services' => ['Cloud Architecture', 'Managed IT', 'Compliance'], 'timezone' => 'EST/CST'],
-                ['city' => 'Dhaka', 'country' => 'Bangladesh', 'flag' => '🇧🇩', 'region' => 'Asia-Pacific Hub', 'address' => 'Gulshan Avenue, Dhaka 1212', 'phone' => '+880 2 5501 2345', 'services' => ['Web Development', 'Software Engineering', 'Remote IT Support'], 'timezone' => 'BST (GMT+6)'],
-                ['city' => 'Singapore', 'country' => 'Singapore', 'flag' => '🇸🇬', 'region' => 'APAC Regional', 'address' => '1 Raffles Place, Singapore 048616', 'phone' => '+65 6100 0100', 'services' => ['Cloud Security', 'Network Infrastructure', 'AI Solutions'], 'timezone' => 'SGT (GMT+8)'],
-                ['city' => 'Dubai', 'country' => 'United Arab Emirates', 'flag' => '🇦🇪', 'region' => 'MENA Regional', 'address' => 'DIFC, Dubai, UAE', 'phone' => '+971 4 555 0100', 'services' => ['IT Consulting', 'Digital Transformation', 'Managed Services'], 'timezone' => 'GST (GMT+4)'],
-                ['city' => 'Sydney', 'country' => 'Australia', 'flag' => '🇦🇺', 'region' => 'Oceania', 'address' => '1 Macquarie Place, Sydney NSW 2000', 'phone' => '+61 2 5550 0100', 'services' => ['Cloud Migration', 'Disaster Recovery', 'IT Training'], 'timezone' => 'AEST (GMT+10)'],
+                ['city' => 'London', 'country' => 'United Kingdom', 'flag' => '🇬🇧', 'region' => 'EMEA', 'services' => ['Cybersecurity', 'Penetration Testing', 'IT Consulting'], 'timezone' => 'GMT/BST'],
+                ['city' => 'New York', 'country' => 'United States', 'flag' => '🇺🇸', 'region' => 'Americas', 'services' => ['Cloud Architecture', 'Managed IT', 'Compliance'], 'timezone' => 'EST/CST'],
+                ['city' => 'Dhaka', 'country' => 'Bangladesh', 'flag' => '🇧🇩', 'region' => 'Asia-Pacific', 'services' => ['Web Development', 'Software Engineering', 'Remote IT Support'], 'timezone' => 'BST (GMT+6)'],
+                ['city' => 'Singapore', 'country' => 'Singapore', 'flag' => '🇸🇬', 'region' => 'APAC', 'services' => ['Cloud Security', 'Network Infrastructure', 'AI Solutions'], 'timezone' => 'SGT (GMT+8)'],
+                ['city' => 'Dubai', 'country' => 'United Arab Emirates', 'flag' => '🇦🇪', 'region' => 'MENA', 'services' => ['IT Consulting', 'Digital Transformation', 'Managed Services'], 'timezone' => 'GST (GMT+4)'],
+                ['city' => 'Sydney', 'country' => 'Australia', 'flag' => '🇦🇺', 'region' => 'Oceania', 'services' => ['Cloud Migration', 'Disaster Recovery', 'IT Training'], 'timezone' => 'AEST (GMT+10)'],
             ] as $office)
             <div class="cosmic-card p-6 group">
                 <div class="flex items-center gap-3 mb-4">
@@ -67,9 +67,8 @@
                         <span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">{{ $office['region'] }}</span>
                     </div>
                 </div>
-                <p class="text-sm text-slate-400 mb-1">{{ $office['country'] }}</p>
-                <p class="text-xs text-slate-500 mb-1">{{ $office['address'] }}</p>
-                <p class="text-xs text-slate-500 mb-3">📞 {{ $office['phone'] }} · 🕐 {{ $office['timezone'] }}</p>
+                <p class="text-sm text-slate-400 mb-1">{{ $office['country'] }} · {{ $office['timezone'] }}</p>
+                <p class="text-xs text-slate-500 mb-3">Remote support available — contact us for engagement options in this region.</p>
                 <div class="flex flex-wrap gap-1.5">
                     @foreach($office['services'] as $svc)
                     <span class="text-xs px-2 py-0.5 rounded bg-white/5 text-slate-300 border border-white/10">{{ $svc }}</span>
@@ -86,7 +85,7 @@
     <div class="max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">Countries We Serve</h2>
-            <p class="text-base text-slate-400">Our services are available across 15+ countries with localised pricing and support.</p>
+            <p class="text-base text-slate-400">Service availability by country is confirmed per engagement — contact us for your location.</p>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 max-w-5xl mx-auto">
@@ -121,7 +120,7 @@
     <div class="relative z-10 max-w-[1000px] mx-auto px-6 text-center">
         <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-6">Ready to Work With Us?</h2>
         <p class="text-lg text-slate-300 mb-8 leading-relaxed">Contact the nearest office for a free consultation and discover how we can support your business globally.</p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold btn-brand-gradient" style=" box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
             Contact Us Today
         </a>
     </div>

@@ -66,7 +66,7 @@
                 ['q' => 'What IT services does TechSupport Solutions provide?', 'a' => 'We provide comprehensive IT services including cybersecurity (penetration testing, vulnerability assessments, security audits), managed IT support, cloud infrastructure, web and software development, IT consulting, and digital transformation services.'],
                 ['q' => 'Which industries do you serve?', 'a' => 'We serve a wide range of industries including healthcare, finance and banking, legal, education, e-commerce, manufacturing, and government organisations. Our solutions are tailored to each industry\'s specific compliance and operational requirements.'],
                 ['q' => 'Do you provide international support?', 'a' => 'Yes. We support clients across the United Kingdom, United States, Bangladesh, Europe, and other regions. Our team operates across multiple time zones and can provide remote and on-site support as needed.'],
-                ['q' => 'What are your support hours?', 'a' => 'Our standard support operates Monday to Friday, 9 AM to 6 PM local time. Premium and enterprise customers have access to 24/7/365 emergency support with guaranteed response times based on their SLA tier.'],
+                ['q' => 'What are your support hours?', 'a' => 'Support hours and response targets are agreed per service plan. Contact us to discuss the coverage your organisation needs.'],
                 ['q' => 'How do I get started with TechSupport Solutions?', 'a' => 'Simply visit our Contact page or request a free consultation. Our solutions team will assess your requirements, recommend the right services, and provide a tailored proposal with transparent pricing.'],
             ];
             @endphp
@@ -87,8 +87,8 @@
         <div x-show="activeCategory === 'services'" class="max-w-4xl mx-auto space-y-4" style="display: none;">
             @php
             $faqs = [
-                ['q' => 'What cybersecurity services do you offer?', 'a' => 'Our cybersecurity services include penetration testing, vulnerability assessments, web application security testing, network security audits, security compliance audits (ISO 27001, SOC 2, HIPAA, GDPR), incident response, and managed security services.'],
-                ['q' => 'Do you offer managed IT support?', 'a' => 'Yes. Our managed IT support includes 24/7 monitoring, remote help desk, server management, network infrastructure management, Microsoft 365 support, backup and disaster recovery, and proactive maintenance.'],
+                ['q' => 'What cybersecurity services do you offer?', 'a' => 'Our cybersecurity services include penetration testing, vulnerability assessments, web application security testing, network security reviews, incident response assistance, and managed security services.'],
+                ['q' => 'Do you offer managed IT support?', 'a' => 'Yes. Our managed IT support includes monitoring options, remote help desk, server management, network infrastructure management, Microsoft 365 support, backup and disaster recovery, and proactive maintenance.'],
                 ['q' => 'Can you help with cloud migration?', 'a' => 'Absolutely. We provide end-to-end cloud migration services including assessment, planning, migration execution, and post-migration optimisation. We work with AWS, Microsoft Azure, and Google Cloud Platform.'],
                 ['q' => 'What development services are available?', 'a' => 'We offer web development, mobile app development, CRM/ERP development, e-commerce development, API development, custom software development, and UI/UX design services.'],
                 ['q' => 'Do you provide IT training?', 'a' => 'Yes. We offer customised IT training programmes for organisations, including cybersecurity awareness training, cloud platform training, Microsoft 365 training, and technical skills development.'],
@@ -112,8 +112,8 @@
             @php
             $faqs = [
                 ['q' => 'How often should we conduct a penetration test?', 'a' => 'We recommend at least annually, with additional tests after major infrastructure changes, new application deployments, or following a security incident. Regulated industries may require more frequent testing.'],
-                ['q' => 'What compliance frameworks do you support?', 'a' => 'We support ISO 27001, SOC 2 Type II, HIPAA, GDPR, PCI DSS, Cyber Essentials, and NIST frameworks. Our compliance experts can guide you through the entire certification process.'],
-                ['q' => 'Do you offer incident response services?', 'a' => 'Yes. Our incident response team provides 24/7 emergency support for security breaches, ransomware attacks, data breaches, and other cyber incidents. We follow industry-standard IR playbooks for rapid containment and recovery.'],
+                ['q' => 'What compliance frameworks do you support?', 'a' => 'We can align engagements with widely used frameworks such as ISO 27001, SOC 2, HIPAA, GDPR, PCI DSS and NIST. Certification itself is issued by accredited bodies — we help you prepare for it.'],
+                ['q' => 'Do you offer incident response services?', 'a' => 'Yes. Our team assists with security incidents such as suspected breaches and ransomware events, following documented containment and recovery steps agreed with you.'],
                 ['q' => 'What is your approach to security audits?', 'a' => 'We conduct comprehensive security audits covering network security, application security, access controls, data protection, physical security, and policy compliance. Our audits include detailed findings reports with actionable remediation recommendations.'],
             ];
             @endphp
@@ -209,7 +209,7 @@
         <h2 class="text-3xl sm:text-5xl font-black text-white mb-6">Still Have Questions?</h2>
         <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Our team is ready to help you find the right IT solution for your business.</p>
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl" style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+            <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl btn-brand-gradient">
                 Contact Us
             </a>
             <a href="{{ route('services.index') }}" class="btn btn-lg btn-glass font-bold px-8 py-4 rounded-2xl border-white/20 hover:border-cyan-400/50">

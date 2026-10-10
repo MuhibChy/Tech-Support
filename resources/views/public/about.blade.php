@@ -72,8 +72,8 @@
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
                         <div>
-                            <div class="text-lg font-bold text-white">Tier-1 Response</div>
-                            <div class="text-xs text-cyan-400 font-mono">15-minute Critical SLA</div>
+                            <div class="text-lg font-bold text-white">Priority Response</div>
+                            <div class="text-xs text-cyan-400 font-mono">SLA-Based Handling</div>
                         </div>
                     </div>
                 </div>
@@ -87,15 +87,15 @@
                     Architected for Resilience at Every Digital Layer.
                 </h2>
                 <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal">
-                    Our Global Security Operations Center (SOC) operates 24/7/365 with active telemetry analysis, automated containment playbooks, and redundant cloud clusters across tier-IV certified data centers worldwide.
+                    We build resilient IT environments with layered security practices, monitored infrastructure, and cloud architectures designed around your recovery and availability needs.
                 </p>
 
                 <div class="space-y-4 pt-2">
                     @foreach([
-                        'Tier IV certified data centers with N+2 power, cooling, and network redundancy',
-                        'Real-time automated heuristic telemetry across all server clusters and cloud endpoints',
-                        'ISO 27001, SOC 2 Type II, HIPAA, and GDPR aligned security governance',
-                        'Automated micro-segmentation and instantaneous ransomware rollback mechanisms'
+                        'Redundant infrastructure design with documented backup and recovery procedures',
+                        'Continuous monitoring options with alerting tuned to your service plan',
+                        'Security governance with audit trails, aligned with widely used frameworks',
+                        'Network segmentation and tested rollback procedures for critical changes'
                     ] as $point)
                     <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white/[0.02] border border-white/5">
                         <div class="w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -124,7 +124,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
                 ['title' => 'Integrity & Transparency', 'desc' => 'Every invoice, quotation milestone, and SLA report is open, verifiable, and free of hidden costs.', 'icon' => 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'],
-                ['title' => 'Technical Excellence', 'desc' => 'Certified architects across Microsoft Azure, AWS, Cisco, and offensive cybersecurity standards.', 'icon' => 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'],
+                ['title' => 'Technical Excellence', 'desc' => 'Experienced engineers across cloud platforms, networking, and security practices.', 'icon' => 'M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z'],
                 ['title' => 'Proactive Defense', 'desc' => 'We prevent threats before they materialize rather than simply reacting to downtime disruptions.', 'icon' => 'M13 10V3L4 14h7v7l9-11h-7z'],
                 ['title' => 'Relentless Client Focus', 'desc' => 'Your business uptime is our primary KPI. We stand beside your team around the clock, every day.', 'icon' => 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z'],
             ] as $val)
@@ -147,7 +147,7 @@
     <div class="w-full max-w-4xl mx-auto px-6">
         <h2 class="text-3xl sm:text-5xl font-black text-white mb-6">Work with Certified Infrastructure Specialists</h2>
         <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Get in touch with our solutions engineering team to review your current architecture and security posture.</p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl" style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl btn-brand-gradient">
             Contact Our Engineering Team
         </a>
     </div>

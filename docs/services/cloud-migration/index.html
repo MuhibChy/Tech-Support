@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="vYGqSlUhjkgO5P0t92S2nh1rz7QUgH2S1OyTEMRW">
+
+    <title>Cloud Migration — TechSupport Solutions</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://muhibchy.github.io/Tech-Support/og-cover.jpg">
+    <meta property="og:image" content="https://muhibchy.github.io/Tech-Support/og-cover.jpg">
+    <link rel="canonical" href="https://muhibchy.github.io/Tech-Support/services/cloud-migration/">
+    <meta name="description" content="Migrate your infrastructure, applications, and data to AWS, Azure, or GCP.">
+    <meta name="keywords" content="IT support, cybersecurity, managed IT, cloud services, network security, IT consulting">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="https://muhibchy.github.io/Tech-Support/favicon.ico">
+
+    
+    <meta property="og:title" content="Cloud Migration — TechSupport Solutions">
+    <meta property="og:description" content="Migrate your infrastructure, applications, and data to AWS, Azure, or GCP.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://muhibchy.github.io/Tech-Support/services/cloud-migration">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    
+    <link rel="preload" as="style" href="https://muhibchy.github.io/Tech-Support/build/assets/app-b9b8482b.css" /><link rel="modulepreload" href="https://muhibchy.github.io/Tech-Support/build/assets/app-b3911664.js" /><link rel="stylesheet" href="https://muhibchy.github.io/Tech-Support/build/assets/app-b9b8482b.css" /><script type="module" src="https://muhibchy.github.io/Tech-Support/build/assets/app-b3911664.js"></script>
+    
+    
+    
+    <script>
+        (function() {
+            const saved = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (saved === 'dark' || (!saved && prefersDark) || true) {
+                document.documentElement.classList.add('dark');
+            }
+        })();
+    </script>
+</head>
+<body class="bg-[#030712] text-slate-100 min-h-screen flex flex-col relative overflow-x-hidden selection:bg-cyan-500/25 selection:text-cyan-300"
+      x-data="{ mobileOpen: false, servicesOpen: false, industriesOpen: false, kbOpen: false }"
+      data-lights="services">
+
+    
+    <canvas id="solar-system-canvas" class="pointer-events-none" aria-hidden="true" data-solar-system></canvas>
+<div class="solar-fallback-bg" style="display: none;" aria-hidden="true"></div>
+
+    
+    <div class="gsb" aria-hidden="true">
+    <div class="gsb-stars gsb-stars-a"></div>
+    <div class="gsb-stars gsb-stars-b"></div>
+    <div class="gsb-nebula gsb-nebula-a"></div>
+    <div class="gsb-nebula gsb-nebula-b"></div>
+    <div class="gsb-orbit gsb-orbit-a"></div>
+    <div class="gsb-orbit gsb-orbit-b"></div>
+    <div class="gsb-planet"></div>
+    <div class="gsb-moon"></div>
+    <div class="gsb-dust"></div>
+    <div class="gsb-wash"></div>
+    <div class="gsb-spotlight"></div>
+</div>
+
+    
+    <canvas id="cosmic-canvas" class="fixed inset-0 pointer-events-none z-0" aria-hidden="true"></canvas>
+
+    
+    <div class="page-lights" aria-hidden="true"><div class="pl-blob pl-a"></div><div class="pl-blob pl-b"></div><div class="pl-blob pl-c"></div></div>
+
+    
+    <nav class="nav-premium" id="main-nav"
+         x-data="{ scrolled: window.scrollY > 20 }"
+         @scroll.window="scrolled = window.scrollY > 20"
+         :class="{ 'nav-scrolled shadow-2xl': scrolled }">
+
+        <div class="w-full max-w-[1720px] mx-auto px-4 sm:px-6 lg:px-12">
+            <div class="flex items-center justify-between h-[70px]">
+
+                
+                <a href="https://muhibchy.github.io/Tech-Support" class="flex items-center gap-3 group flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg btn-brand-gradient">
+                        <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <div class="flex flex-col leading-none">
+                        <span class="font-bold text-[15px] text-navy-900 dark:text-white tracking-tight">TechSupport</span>
+                        <span class="text-[9px] uppercase tracking-[0.25em] text-cyber-500 dark:text-cyber-400 font-semibold">Solutions</span>
+                    </div>
+                </a>
+
+                
+                <div class="hidden xl:flex items-center gap-0.5">
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Home
+                    </a>
+
+                    
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                                class="px-3 py-2 rounded-lg text-sm font-medium flex items-center gap-1.5 transition-all duration-200 text-brand-600 dark:text-cyber-400 bg-brand-50 dark:bg-cyber-500/10">
+                            <span>Services</span>
+                            <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div x-show="open"
+                             x-transition:enter="transition ease-out duration-150"
+                             x-transition:enter-start="opacity-0 -translate-y-2 scale-95"
+                             x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                             x-transition:leave="transition ease-in duration-100"
+                             x-transition:leave-end="opacity-0 -translate-y-2 scale-95"
+                             class="absolute top-full left-0 mt-2 w-72 bg-white dark:bg-navy-800 rounded-2xl shadow-2xl border border-surface-200 dark:border-white/8 p-2 z-50"
+                             style="display: none;">
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-navy-800 dark:text-white hover:bg-brand-50 dark:hover:bg-cyber-500/10 hover:text-brand-600 dark:hover:text-cyber-400 transition-colors mb-1">
+                                <div class="w-8 h-8 rounded-lg bg-brand-500/10 dark:bg-cyber-500/10 flex items-center justify-center flex-shrink-0">
+                                    <svg class="w-4 h-4 text-brand-600 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                                </div>
+                                All Services
+                            </a>
+                            <div class="h-px bg-surface-100 dark:bg-white/5 my-1"></div>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=cybersecurity"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #DC2626"></span>
+                                                                <span>Cybersecurity Services</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=web-development"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #2563EB"></span>
+                                                                <span>Web Development &amp; Design</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=digital-marketing"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #059669"></span>
+                                                                <span>Digital Marketing</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=managed-it-support"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #7C3AED"></span>
+                                                                <span>Managed IT Support</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=cloud-server-network"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #0891B2"></span>
+                                                                <span>Cloud, Server &amp; Network Services</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=business-technology"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #D97706"></span>
+                                                                <span>Business Technology &amp; Automation</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=microsoft-365-business-it"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #0078D4"></span>
+                                                                <span>Microsoft 365 &amp; Business IT</span>
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/services?category=data-business-intelligence"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                                                <span class="w-2 h-2 rounded-full flex-shrink-0" style="background-color: #FF6B35"></span>
+                                                                <span>Data &amp; Business Intelligence</span>
+                            </a>
+                                                    </div>
+                    </div>
+
+                    
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                                class="px-3 py-2 rounded-lg text-sm font-medium flex items-center gap-1.5 transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                            <span>Industries</span>
+                            <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div x-show="open"
+                             x-transition:enter="transition ease-out duration-150"
+                             x-transition:enter-start="opacity-0 -translate-y-2 scale-95"
+                             x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                             x-transition:leave="transition ease-in duration-100"
+                             x-transition:leave-end="opacity-0 -translate-y-2 scale-95"
+                             class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-navy-800 rounded-2xl shadow-2xl border border-surface-200 dark:border-white/8 p-2 z-50"
+                             style="display: none;">
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                                Healthcare
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                Financial Services
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                                E-Commerce
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"/></svg>
+                                Education
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+                                Manufacturing
+                            </a>
+                                                        <a href="https://muhibchy.github.io/Tech-Support/industries"
+                               class="flex items-center gap-3 px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:text-navy-900 dark:hover:text-white hover:bg-surface-50 dark:hover:bg-white/5 transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-brand-500 dark:text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                                Government
+                            </a>
+                                                        <div class="h-px bg-surface-100 dark:bg-white/5 my-1"></div>
+                            <a href="https://muhibchy.github.io/Tech-Support/industries" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-semibold text-brand-600 dark:text-cyber-400 hover:bg-brand-50 dark:hover:bg-cyber-500/10 transition-colors">
+                                View All Industries
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support/services"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Solutions
+                    </a>
+                    <a href="https://muhibchy.github.io/Tech-Support/services?category=cybersecurity"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Cybersecurity
+                    </a>
+                    <a href="https://muhibchy.github.io/Tech-Support/services?category=cloud"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Cloud
+                    </a>
+
+                    
+                    <div x-data="{ open: false }" @click.away="open = false" class="relative">
+                        <button @click="open = !open"
+                                class="px-3 py-2 rounded-lg text-sm font-medium flex items-center gap-1.5 transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5"
+                                aria-haspopup="true" :aria-expanded="open.toString()">
+                            <span>Resources</span>
+                            <svg class="w-3.5 h-3.5 transition-transform duration-200" :class="{ 'rotate-180': open }" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                        </button>
+                        <div x-show="open"
+                             x-transition:enter="transition ease-out duration-150"
+                             x-transition:enter-start="opacity-0 -translate-y-2 scale-95"
+                             x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+                             x-transition:leave="transition ease-in duration-100"
+                             x-transition:leave-end="opacity-0 -translate-y-2 scale-95"
+                             class="absolute top-full left-0 mt-2 w-60 bg-white dark:bg-navy-800 rounded-2xl shadow-2xl border border-surface-200 dark:border-white/8 p-2 z-50"
+                             style="display: none;">
+                            <a href="https://muhibchy.github.io/Tech-Support/blog" class="block px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5">Blog</a>
+                            <a href="https://muhibchy.github.io/Tech-Support/knowledge-base" class="block px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5">Knowledge Base</a>
+                            <a href="https://muhibchy.github.io/Tech-Support/faq" class="block px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5">FAQ</a>
+                            <a href="https://muhibchy.github.io/Tech-Support/case-studies" class="block px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5">Case Studies</a>
+                            <a href="https://muhibchy.github.io/Tech-Support/portfolio" class="block px-3 py-2 rounded-xl text-sm text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5">Portfolio</a>
+                        </div>
+                    </div>
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support/knowledge-base"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Knowledge Base
+                    </a>
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support/about"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        About
+                    </a>
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support/careers"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Careers
+                    </a>
+
+                    
+                    <a href="https://muhibchy.github.io/Tech-Support/contact"
+                       class="px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5">
+                        Contact
+                    </a>
+                </div>
+
+                
+                <div class="hidden xl:flex items-center gap-2">
+
+                    
+                    <div x-data="{ langOpen: false }" class="relative">
+    <button @click="langOpen = !langOpen" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5 transition-all duration-200">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+        <span class="text-xs">EN</span>
+        <svg class="w-3 h-3 transition-transform duration-200" :class="langOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+
+    <div x-show="langOpen" @click.away="langOpen = false" x-transition
+         class="absolute right-0 mt-2 w-48 bg-white dark:bg-navy-800 rounded-xl shadow-2xl border border-surface-200 dark:border-white/10 py-2 z-50"
+         style="display: none;">
+                <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-cyber-400 bg-cyber-500/10 font-semibold" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-6">EN</span>
+            <span>English</span>
+                        <svg class="w-4 h-4 ml-auto text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </span>
+                <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-6">BN</span>
+            <span>বাংলা</span>
+                    </span>
+                <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-6">AR</span>
+            <span>العربية</span>
+                    </span>
+            </div>
+</div>
+
+                    
+                    <div x-data="{ curOpen: false }" class="relative">
+    <button @click="curOpen = !curOpen" class="flex items-center gap-1.5 px-3 py-2 rounded-lg text-sm font-medium text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5 transition-all duration-200" aria-label="Switch currency">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="text-xs">USD</span>
+        <svg class="w-3 h-3 transition-transform duration-200" :class="curOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+    </button>
+
+    <div x-show="curOpen" @click.away="curOpen = false" x-transition
+         class="absolute right-0 mt-2 w-48 bg-white dark:bg-navy-800 rounded-xl shadow-2xl border border-surface-200 dark:border-white/10 py-2 z-50"
+         style="display: none;">
+                                <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-8">GBP</span>
+                    </span>
+                                        <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-cyber-400 bg-cyber-500/10 font-semibold" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-8">USD</span>
+                        <svg class="w-4 h-4 ml-auto text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    </span>
+                                        <span class="flex items-center gap-3 px-4 py-2.5 text-sm transition-colors text-surface-600 dark:text-surface-300 hover:bg-surface-50 dark:hover:bg-white/5" aria-disabled="true" title="Available on the live application">
+            <span class="font-semibold text-xs w-8">BDT</span>
+                    </span>
+                    </div>
+</div>
+
+                    
+                    <button id="theme-toggle"
+                            onclick="window.Alpine && Alpine.store('theme').toggle()"
+                            class="p-2 rounded-lg text-surface-500 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5 transition-all duration-200"
+                            title="Toggle dark mode" aria-label="Toggle dark mode">
+                        <svg class="w-5 h-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                        </svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </button>
+
+                                            
+                        <a href="https://muhibchy.github.io/Tech-Support/login"
+                           class="px-3.5 py-2 rounded-lg text-sm font-medium text-surface-600 dark:text-surface-400 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5 transition-colors">
+                            Customer Login
+                        </a>
+
+                        
+                        <a href="https://muhibchy.github.io/Tech-Support/contact"
+                           class="btn text-sm px-5 py-2.5 text-white rounded-xl btn-brand-gradient"
+                           style=" box-shadow: 0 4px 20px rgba(37,99,235,0.35);">
+                            Free Consultation
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </a>
+                                    </div>
+
+                
+                <div class="xl:hidden flex items-center gap-2">
+                    <button id="mobile-theme-toggle"
+                            onclick="window.Alpine && Alpine.store('theme').toggle()"
+                            class="p-2 rounded-lg text-surface-500 hover:bg-surface-100 dark:hover:bg-white/5 transition-colors">
+                        <svg class="w-5 h-5 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                        <svg class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                    </button>
+                    <button @click="mobileOpen = !mobileOpen" class="p-2 rounded-lg text-surface-500 hover:text-navy-900 dark:hover:text-white hover:bg-surface-100 dark:hover:bg-white/5 transition-colors" aria-label="Open menu">
+                        <svg x-show="!mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                        <svg x-show="mobileOpen" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            
+            <div x-show="mobileOpen"
+                 x-transition:enter="transition ease-out duration-200"
+                 x-transition:enter-start="opacity-0 -translate-y-2"
+                 x-transition:enter-end="opacity-100 translate-y-0"
+                 x-transition:leave="transition ease-in duration-150"
+                 x-transition:leave-end="opacity-0 -translate-y-2"
+                 class="xl:hidden pb-5 border-t border-surface-200 dark:border-white/5 mt-1"
+                 style="display:none;">
+                <div class="pt-3 space-y-0.5">
+                    <a href="https://muhibchy.github.io/Tech-Support" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Home</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/services" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Services</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/services?category=cybersecurity" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Cybersecurity</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/services?category=cloud" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Cloud</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/blog" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Blog & Resources</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/knowledge-base" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Knowledge Base</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/case-studies" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Case Studies</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/portfolio" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Portfolio</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/about" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">About</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/pricing" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Pricing</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/faq" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">FAQ</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/contact" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Contact</a>
+
+                    <div class="pt-3 mt-2 border-t border-surface-200 dark:border-white/5 space-y-2">
+                                                    <a href="https://muhibchy.github.io/Tech-Support/login" class="block px-3.5 py-2.5 rounded-xl text-sm font-medium text-surface-700 dark:text-surface-300 hover:bg-surface-100 dark:hover:bg-white/5">Customer Login</a>
+                            <a href="https://muhibchy.github.io/Tech-Support/get-quote" class="block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-white text-center btn-brand-gradient">Get a Free Quote</a>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+        <div class="h-[70px]"></div>
+    
+    
+    
+    
+    
+    <div class="flex-1 relative z-10">
+
+<section class="section bg-navy-900 dark:bg-navy-950 text-white relative overflow-hidden">
+    
+    <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none" aria-hidden="true" data-hero-scene></canvas>
+<div class="hero-fallback-bg" style="display: none;" aria-hidden="true"></div>
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-20 lg:py-28 relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-8 h-px bg-brand-400"></div>
+                    <span class="label text-brand-400">Cloud, Server &amp; Network Services</span>
+                </div>
+                <h1 class="heading-xl text-white mb-6">Cloud Migration</h1>
+                <p class="text-lg text-surface-400 leading-relaxed mb-6">Migrate your infrastructure, applications, and data to AWS, Azure, or GCP.</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://muhibchy.github.io/Tech-Support/login" class="btn bg-brand-600 text-white hover:bg-brand-700 px-6 py-3 text-sm font-semibold">
+                        🛒 Order Now
+                    </a>
+                                            <a href="https://muhibchy.github.io/Tech-Support/login" class="btn bg-white/10 text-white hover:bg-white/20 px-6 py-3 text-sm font-semibold border border-white/20">
+                            📝 Get Custom Quote
+                        </a>
+                                        <a href="https://muhibchy.github.io/Tech-Support/contact" class="btn bg-white/10 text-white hover:bg-white/20 px-6 py-3 text-sm font-semibold border border-white/20">
+                        📞 Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="text-center lg:text-right">
+                
+                <div class="inline-block bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+                    <div class="text-sm text-surface-400 mb-2">Starting from</div>
+                                                                    <div data-country-price="UK" style="display:none">
+                                                            <div class="text-4xl font-bold text-white mb-1">£5,000</div>
+                                <div class="text-surface-400 text-sm">Starting_from</div>
+                                                    </div>
+                                                                                            <div data-country-price="US" style="display:none">
+                                                            <div class="text-4xl font-bold text-white mb-1">$6,000</div>
+                                <div class="text-surface-400 text-sm">Starting_from</div>
+                                                    </div>
+                                                                                            <div data-country-price="BD" style="display:none">
+                                                            <div class="text-4xl font-bold text-white mb-1">৳275,000</div>
+                                <div class="text-surface-400 text-sm">Starting_from</div>
+                                                    </div>
+                                                                                                            <div class="mt-4 pt-4 border-t border-white/10 text-sm text-surface-400">
+                            ⏱ 4-16 weeks
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-white dark:bg-navy-900 border-b border-surface-200 dark:border-white/5">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-8">
+        <div class="flex items-center gap-8 overflow-x-auto">
+            <span class="text-sm font-medium text-gray-500 dark:text-gray-400 whitespace-nowrap">Pricing by market:</span>
+                        <div class="flex items-center gap-3 whitespace-nowrap px-4 py-2 rounded-xl bg-brand-50 dark:bg-brand-900/20 border border-brand-200 dark:border-brand-800">
+                <span class="text-xl">£</span>
+                <div>
+                    <div class="font-bold text-gray-900 dark:text-white">
+                                                    From £5,000
+                                            </div>
+                    <div class="text-xs text-gray-500">United Kingdom (GBP)</div>
+                </div>
+            </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap px-4 py-2 rounded-xl bg-surface-50 dark:bg-white/5">
+                <span class="text-xl">$</span>
+                <div>
+                    <div class="font-bold text-gray-900 dark:text-white">
+                                                    From $6,000
+                                            </div>
+                    <div class="text-xs text-gray-500">United States (USD)</div>
+                </div>
+            </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap px-4 py-2 rounded-xl bg-surface-50 dark:bg-white/5">
+                <span class="text-xl">৳</span>
+                <div>
+                    <div class="font-bold text-gray-900 dark:text-white">
+                                                    From ৳275,000
+                                            </div>
+                    <div class="text-xs text-gray-500">Bangladesh (BDT)</div>
+                </div>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section class="section bg-white dark:bg-navy-900">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+        <div class="max-w-3xl">
+            <div class="prose dark:prose-invert prose-lg prose-surface max-w-none">
+                Complete cloud migration service from planning and assessment through migration execution to post-migration optimization for AWS, Azure, and GCP.
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section bg-surface-50 dark:bg-navy-800/30">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+        <div class="grid lg:grid-cols-2 gap-12">
+                        <div>
+                <h2 class="heading-md mb-6">📋 What's Included</h2>
+                <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-0.5">✓</span>
+                        <span class="text-gray-600 dark:text-gray-300">Migration plan</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-0.5">✓</span>
+                        <span class="text-gray-600 dark:text-gray-300">Cloud architecture</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-0.5">✓</span>
+                        <span class="text-gray-600 dark:text-gray-300">Migration execution</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-green-500 mt-0.5">✓</span>
+                        <span class="text-gray-600 dark:text-gray-300">Optimization report</span>
+                    </li>
+                                    </ul>
+            </div>
+                                    <div>
+                <h2 class="heading-md mb-6">⚡ Key Features</h2>
+                <ul class="space-y-3">
+                                        <li class="flex items-start gap-3">
+                        <span class="text-brand-500 mt-0.5">•</span>
+                        <span class="text-gray-600 dark:text-gray-300">Multi-cloud support</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-brand-500 mt-0.5">•</span>
+                        <span class="text-gray-600 dark:text-gray-300">Zero downtime options</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-brand-500 mt-0.5">•</span>
+                        <span class="text-gray-600 dark:text-gray-300">Data migration</span>
+                    </li>
+                                        <li class="flex items-start gap-3">
+                        <span class="text-brand-500 mt-0.5">•</span>
+                        <span class="text-gray-600 dark:text-gray-300">App modernization</span>
+                    </li>
+                                    </ul>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section class="section bg-white dark:bg-navy-900">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+        <div class="max-w-2xl mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-px bg-brand-500"></div>
+                <span class="label">Our Process</span>
+            </div>
+            <h2 class="heading-lg">How we deliver cloud migration.</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div>
+                <div class="text-4xl font-bold text-surface-200 dark:text-white/5 mb-4">01</div>
+                <h3 class="heading-sm mb-2">Consult</h3>
+                <p class="body-sm">We discuss your requirements and provide a tailored proposal.</p>
+            </div>
+                        <div>
+                <div class="text-4xl font-bold text-surface-200 dark:text-white/5 mb-4">02</div>
+                <h3 class="heading-sm mb-2">Plan</h3>
+                <p class="body-sm">Our team creates a detailed project plan with clear milestones.</p>
+            </div>
+                        <div>
+                <div class="text-4xl font-bold text-surface-200 dark:text-white/5 mb-4">03</div>
+                <h3 class="heading-sm mb-2">Deliver</h3>
+                <p class="body-sm">Execution follows strict quality standards with regular updates.</p>
+            </div>
+                        <div>
+                <div class="text-4xl font-bold text-surface-200 dark:text-white/5 mb-4">04</div>
+                <h3 class="heading-sm mb-2">Support</h3>
+                <p class="body-sm">Ongoing support and optimization after delivery.</p>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section class="section bg-surface-50 dark:bg-navy-800/30">
+    <div class="max-w-[1400px] mx-auto px-6 lg:px-10 py-16 lg:py-24">
+        <div class="max-w-2xl mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <div class="w-8 h-px bg-brand-500"></div>
+                <span class="label">Related Services</span>
+            </div>
+            <h2 class="heading-lg">Explore our capabilities.</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <a href="https://muhibchy.github.io/Tech-Support/services/cloud-infrastructure-setup" class="group card-hover p-6">
+                <h3 class="heading-sm mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Cloud Infrastructure Setup</h3>
+                <p class="body-sm">Design and deploy cloud infrastructure with best practices for security and scalability.</p>
+                                                    <div class="mt-3">
+                                                    <span class="font-bold text-brand-600 dark:text-brand-400">£2,000</span>
+                                            </div>
+                            </a>
+                        <a href="https://muhibchy.github.io/Tech-Support/services/cloud-security-configuration" class="group card-hover p-6">
+                <h3 class="heading-sm mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Cloud Security Configuration</h3>
+                <p class="body-sm">Configure cloud security including IAM, security groups, encryption, and compliance.</p>
+                                                    <div class="mt-3">
+                                                    <span class="font-bold text-brand-600 dark:text-brand-400">£1,500</span>
+                                            </div>
+                            </a>
+                        <a href="https://muhibchy.github.io/Tech-Support/services/virtual-server-setup" class="group card-hover p-6">
+                <h3 class="heading-sm mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Virtual Server Setup</h3>
+                <p class="body-sm">Deploy and configure virtual servers with proper security and monitoring.</p>
+                                                    <div class="mt-3">
+                                                    <span class="font-bold text-brand-600 dark:text-brand-400">£500</span>
+                                            </div>
+                            </a>
+                    </div>
+    </div>
+</section>
+
+
+<section class="section bg-navy-900 dark:bg-navy-950">
+    <div class="max-w-4xl mx-auto px-6 lg:px-10 py-16 lg:py-24 text-center">
+        <h2 class="heading-lg text-white mb-5">Ready to get started?</h2>
+        <p class="text-lg text-surface-400 mb-8">Let's discuss how cloud migration can support your organization.</p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://muhibchy.github.io/Tech-Support/login" class="btn bg-brand-600 text-white hover:bg-brand-700 px-8 py-4 text-base font-semibold">
+                    🛒 Order Now
+                </a>
+                                    <a href="https://muhibchy.github.io/Tech-Support/login" class="btn bg-white/10 text-white hover:bg-white/20 px-8 py-4 text-base font-semibold border border-white/20">
+                        📝 Get Custom Quote
+                    </a>
+                                <a href="https://muhibchy.github.io/Tech-Support/contact" class="btn bg-white text-navy-900 hover:bg-surface-100 px-8 py-4 text-base font-semibold">
+                    📞 Contact Us
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var saved = localStorage.getItem('selected_country') || 'UK';
+    showHeroPrice(saved);
+
+    function showHeroPrice(code) {
+        var priceEls = document.querySelectorAll('[data-country-price]');
+        priceEls.forEach(function(el) {
+            el.style.display = (el.dataset.countryPrice === code) ? '' : 'none';
+        });
+        // Fallback: if no price for selected country, show first available
+        if (priceEls.length > 0) {
+            var hasVisible = Array.from(priceEls).some(function(el) { return el.style.display !== 'none'; });
+            if (!hasVisible) {
+                priceEls[0].style.display = '';
+            }
+        }
+    }
+});
+</script>
+
+</div>
+
+    
+    <footer class="bg-[#040816] text-white relative overflow-hidden border-t border-white/10 z-10 footer-light">
+        
+        <div class="absolute inset-0 bg-cyber-grid opacity-20 pointer-events-none"></div>
+        <div class="absolute top-0 left-0 right-0 h-px" style="background: linear-gradient(90deg, transparent, rgba(37,99,235,0.4), rgba(92,124,250,0.4), transparent);"></div>
+
+        
+        <div class="relative w-full max-w-[1720px] mx-auto px-6 sm:px-10 lg:px-16 pt-16 lg:pt-20 pb-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-12">
+
+                
+                <div class="lg:col-span-4">
+                    <a href="https://muhibchy.github.io/Tech-Support" class="flex items-center gap-3 mb-5 group">
+                        <div class="w-9 h-9 rounded-xl flex items-center justify-center btn-brand-gradient">
+                            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col leading-none">
+                            <span class="font-bold text-[15px] text-white tracking-tight">TechSupport</span>
+                            <span class="text-[9px] uppercase tracking-[0.25em] text-cyber-400 font-semibold">Solutions</span>
+                        </div>
+                    </a>
+                    <p class="text-sm text-surface-400 leading-relaxed max-w-xs mb-6">
+                        Enterprise IT support, cybersecurity, and managed services. Delivering technology solutions for organisations that demand reliability, security, and performance.
+                    </p>
+                    
+                    <div class="flex items-center gap-3">
+                                                                    </div>
+                </div>
+
+                
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <h4 class="text-xs font-semibold uppercase tracking-widest text-surface-500 mb-4">Services</h4>
+                    <ul class="space-y-2.5 text-sm">
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">IT Support</a>
+                        </li>
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">Cybersecurity</a>
+                        </li>
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">Cloud Solutions</a>
+                        </li>
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">Network Engineering</a>
+                        </li>
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">Web Development</a>
+                        </li>
+                                                <li>
+                            <a href="https://muhibchy.github.io/Tech-Support/services" class="text-surface-400 hover:text-white transition-colors cyber-underline">Digital Marketing</a>
+                        </li>
+                                            </ul>
+                </div>
+
+                
+                <div class="lg:col-span-2">
+                    <h4 class="text-xs font-semibold uppercase tracking-widest text-surface-500 mb-4">Company</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="https://muhibchy.github.io/Tech-Support/about" class="text-surface-400 hover:text-white transition-colors cyber-underline">About Us</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/industries" class="text-surface-400 hover:text-white transition-colors cyber-underline">Industries</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/offices" class="text-surface-400 hover:text-white transition-colors cyber-underline">Service Regions</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/case-studies" class="text-surface-400 hover:text-white transition-colors cyber-underline">Case Studies</a></li>
+<li><a href="https://muhibchy.github.io/Tech-Support/portfolio" class="text-surface-400 hover:text-white transition-colors cyber-underline">Portfolio</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/careers" class="text-surface-400 hover:text-white transition-colors cyber-underline">Careers</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/pricing" class="text-surface-400 hover:text-white transition-colors cyber-underline">Pricing</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/blog" class="text-surface-400 hover:text-white transition-colors cyber-underline">Blog</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/knowledge-base" class="text-surface-400 hover:text-white transition-colors cyber-underline">Knowledge Base</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/faq" class="text-surface-400 hover:text-white transition-colors cyber-underline">FAQ</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/get-quote" class="text-surface-400 hover:text-white transition-colors cyber-underline">Get a Quote</a></li>
+                        <li><a href="https://muhibchy.github.io/Tech-Support/contact" class="text-surface-400 hover:text-white transition-colors cyber-underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                
+                <div class="lg:col-span-3">
+                    <h4 class="text-xs font-semibold uppercase tracking-widest text-surface-500 mb-4">Get in Touch</h4>
+                    <ul class="space-y-3.5 text-sm">
+                                                                                                <li class="flex items-start gap-3">
+                            <div>
+                                <div class="text-[11px] text-surface-500 uppercase tracking-wide mb-0.5">Contact</div>
+                                <span class="text-surface-300">Reach us through the <a href="https://muhibchy.github.io/Tech-Support/contact" class="text-cyber-400 hover:text-white transition-colors">contact page</a>.</span>
+                            </div>
+                        </li>
+                                                <li class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyber-500/10 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-4 h-4 text-cyber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                            <div>
+                                <div class="text-[11px] text-surface-500 uppercase tracking-wide mb-0.5">Support</div>
+                                <span class="text-surface-300">Support hours and response times are agreed per service plan.</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    
+                    <div class="mt-6">
+                        <a href="https://muhibchy.github.io/Tech-Support/contact" class="btn text-sm px-5 py-2.5 w-full justify-center text-white rounded-xl btn-brand-gradient">
+                            Get a Free Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-xs text-surface-600">
+                    &copy; 2026 TechSupport Solutions. All rights reserved.
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-surface-600">
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/privacy-policy" class="hover:text-surface-400 transition-colors">Privacy Policy</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/terms-of-service" class="hover:text-surface-400 transition-colors">Terms of Service</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/cookie-policy" class="hover:text-surface-400 transition-colors">Cookie Policy</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/refund-policy" class="hover:text-surface-400 transition-colors">Refund Policy</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/service-level-agreement" class="hover:text-surface-400 transition-colors">SLA</a>
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/accessibility" class="hover:text-surface-400 transition-colors">Accessibility</a>
+                </div>
+                <div class="flex items-center gap-2 text-xs text-surface-600">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse inline-block"></span>
+                    Service status available on request
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div x-data="aiChat()" x-init="init()" class="fixed bottom-6 right-6 z-50" style="font-family: 'Inter', sans-serif;">
+    
+    <button x-show="!isOpen" @click="toggleChat()" x-transition
+        class="w-14 h-14 bg-gradient-to-br from-brand-600 to-cyber-600 rounded-full shadow-xl shadow-brand-600/30 flex items-center justify-center text-white hover:shadow-brand-600/50 transition-all duration-300 hover:scale-105">
+        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+        </svg>
+    </button>
+
+    
+    <div x-show="isOpen" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-95 translate-y-4"
+        x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+        x-transition:leave="transition ease-in duration-200"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        class="fixed bottom-6 right-6 w-[400px] max-w-[calc(100vw-2rem)] h-[600px] max-h-[calc(100vh-3rem)] bg-white/90 dark:bg-gray-900/90 backdrop-blur-2xl border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+
+        
+        <div class="bg-gradient-to-r from-brand-700 to-cyber-700 px-4 py-3 flex items-center justify-between flex-shrink-0">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 bg-white/20 rounded-xl flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold text-sm">Support Assistant</h3>
+                    <p class="text-white/70 text-xs">Answers when the service is reachable</p>
+                </div>
+            </div>
+            <button @click="isOpen = false" class="text-white/70 hover:text-white transition-colors p-1">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        
+        <div x-ref="messagesContainer" class="flex-1 overflow-y-auto p-4 space-y-4">
+            
+            <template x-if="messages.length === 0 && !loading">
+                <div class="text-center py-8">
+                    <div class="w-16 h-16 bg-gradient-to-br from-brand-600 to-cyber-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="font-bold text-gray-900 dark:text-white mb-2">How can I help you?</h4>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">I can answer questions, create tickets, and more.</p>
+
+                    
+                    <div class="space-y-2">
+                        <template x-for="(q, i) in suggestedQuestions" :key="i">
+                            <button @click="sendMessage(q)" class="block w-full text-left px-4 py-2 text-sm text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/20 rounded-xl hover:bg-primary-100 dark:hover:bg-primary-900/30 transition-colors" x-text="q"></button>
+                        </template>
+                    </div>
+                </div>
+            </template>
+
+            
+            <template x-for="(msg, i) in messages" :key="i">
+                <div :class="msg.role === 'user' ? 'flex justify-end' : 'flex justify-start'">
+                    <div :class="msg.role === 'user'
+                        ? 'bg-primary-600 text-white rounded-2xl rounded-br-md px-4 py-2.5 max-w-[80%]'
+                        : 'bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white rounded-2xl rounded-bl-md px-4 py-2.5 max-w-[80%]'">
+                        <div class="text-sm whitespace-pre-wrap" x-html="formatMessage(msg.content)"></div>
+                        <div class="text-xs mt-1 opacity-50" x-text="formatTime(msg.created_at)"></div>
+                    </div>
+                </div>
+            </template>
+
+            
+            <div x-show="loading" class="flex justify-start">
+                <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl rounded-bl-md px-4 py-3">
+                    <div class="flex gap-1">
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 0ms"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 150ms"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style="animation-delay: 300ms"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div x-show="showTicketDraft" class="px-4 py-2 border-t border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-800/50 flex-shrink-0">
+            <div class="flex gap-2">
+                <button @click="confirmTicket()" class="flex-1 bg-primary-600 text-white text-xs font-semibold py-2 rounded-xl hover:bg-primary-700 transition-colors">Create Ticket</button>
+                <button @click="escalate()" class="flex-1 bg-amber-500 text-white text-xs font-semibold py-2 rounded-xl hover:bg-amber-600 transition-colors">Talk to Agent</button>
+            </div>
+        </div>
+
+        
+        <div class="p-3 border-t border-gray-200 dark:border-gray-700 flex-shrink-0">
+            <form @submit.prevent="sendMessage(input)" class="flex gap-2">
+                <input x-model="input" type="text" placeholder="Ask a question..."
+                    class="flex-1 px-4 py-2.5 bg-gray-100 dark:bg-gray-800 border-0 rounded-xl text-sm text-gray-900 dark:text-white placeholder-gray-400 focus:ring-2 focus:ring-primary-500/20 focus:outline-none transition-all"
+                    :disabled="loading">
+                <button type="submit" :disabled="!input.trim() || loading"
+                    class="w-10 h-10 bg-primary-600 text-white rounded-xl flex items-center justify-center hover:bg-primary-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex-shrink-0">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <div x-data="cookieConsent()" x-show="showBanner" x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="translate-y-full opacity-0" x-transition:enter-end="translate-y-0 opacity-100"
+     x-transition:leave="transition ease-in duration-200" x-transition:leave-start="translate-y-0 opacity-100"
+     x-transition:leave-end="translate-y-full opacity-0"
+     class="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6" style="display: none;">
+    <div class="max-w-6xl mx-auto cosmic-glass p-6 sm:p-8 rounded-2xl border border-white/10 shadow-2xl backdrop-blur-2xl bg-[#040816]/95">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+            <div class="flex-1">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Cookie Preferences</h3>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    We use essential cookies to ensure our platform works correctly. Optional analytics cookies help us improve your experience. You can manage your preferences at any time. See our
+                    <a href="https://muhibchy.github.io/Tech-Support/legal/cookie-policy" class="text-cyan-400 hover:text-cyan-300 underline underline-offset-2">Cookie Policy</a>
+                    for details.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto flex-shrink-0">
+                <button @click="rejectAll()"
+                        class="px-6 py-3 rounded-xl text-sm font-semibold text-slate-300 border border-white/10 hover:border-white/20 hover:bg-white/5 transition-all">
+                    Essential Only
+                </button>
+                <button @click="acceptSelected()"
+                        class="px-6 py-3 rounded-xl text-sm font-semibold text-slate-300 border border-white/10 hover:border-cyan-400/50 hover:bg-cyan-500/10 transition-all">
+                    Accept Selected
+                </button>
+                <button @click="acceptAll()"
+                        class="px-6 py-3 rounded-xl text-sm font-semibold text-white transition-all hover:scale-105 btn-brand-gradient">
+                    Accept All
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function cookieConsent() {
+        return {
+            showBanner: false,
+            init() {
+                const consent = localStorage.getItem('cookie_consent');
+                if (!consent) {
+                    setTimeout(() => { this.showBanner = true; }, 1500);
+                }
+            },
+            acceptAll() {
+                localStorage.setItem('cookie_consent', JSON.stringify({
+                    essential: true,
+                    analytics: true,
+                    marketing: true,
+                    timestamp: new Date().toISOString()
+                }));
+                this.showBanner = false;
+            },
+            rejectAll() {
+                localStorage.setItem('cookie_consent', JSON.stringify({
+                    essential: true,
+                    analytics: false,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                }));
+                this.showBanner = false;
+            },
+            acceptSelected() {
+                localStorage.setItem('cookie_consent', JSON.stringify({
+                    essential: true,
+                    analytics: true,
+                    marketing: false,
+                    timestamp: new Date().toISOString()
+                }));
+                this.showBanner = false;
+            }
+        };
+    }
+</script>
+
+    <script>
+function aiChat() {
+    return {
+        isOpen: false,
+        loading: false,
+        messages: [],
+        input: '',
+        conversationId: null,
+        sessionId: null,
+        suggestedQuestions: [],
+        showTicketDraft: false,
+        ticketDraft: null,
+
+        init() {
+            // Load session from localStorage
+            this.sessionId = localStorage.getItem('ai_session_id') || crypto.randomUUID();
+            localStorage.setItem('ai_session_id', this.sessionId);
+        },
+
+        toggleChat() {
+            this.isOpen = !this.isOpen;
+            if (this.isOpen && !this.conversationId) {
+                this.startConversation();
+            }
+        },
+
+        async startConversation() {
+            try {
+                this.loading = true;
+                const res = await fetch('https://muhibchy.github.io/Tech-Support/api/ai/conversation', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Session-ID': this.sessionId,
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    },
+                    body: JSON.stringify({ source: 'public' }),
+                });
+                const data = await res.json();
+                this.conversationId = data.conversation_id;
+                this.sessionId = data.session_id;
+                this.suggestedQuestions = data.suggested_questions || [];
+
+                if (data.welcome_message) {
+                    this.messages.push({ role: 'assistant', content: data.welcome_message, created_at: new Date() });
+                }
+            } catch (e) {
+                console.error('Failed to start conversation', e);
+                this.messages.push({ role: 'assistant', content: 'The assistant is unreachable right now. Please use the contact page and our team will respond.', created_at: new Date() });
+            } finally {
+                this.loading = false;
+            }
+        },
+
+        async sendMessage(text) {
+            if (!text || !text.trim()) return;
+            const msg = text.trim();
+            this.input = '';
+            this.messages.push({ role: 'user', content: msg, created_at: new Date() });
+            this.scrollToBottom();
+            this.loading = true;
+
+            try {
+                const res = await fetch('https://muhibchy.github.io/Tech-Support/api/ai/message', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Session-ID': this.sessionId,
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    },
+                    body: JSON.stringify({ conversation_id: this.conversationId, message: msg }),
+                });
+                const data = await res.json();
+                this.messages.push({ role: 'assistant', content: data.message, created_at: new Date() });
+
+                if (data.ticket_draft) {
+                    this.showTicketDraft = true;
+                    this.ticketDraft = data.draft_data;
+                }
+
+                if (data.escalated) {
+                    this.showTicketDraft = false;
+                }
+            } catch (e) {
+                this.messages.push({ role: 'assistant', content: 'The assistant is unreachable right now. Please use the contact page and our team will respond.', created_at: new Date() });
+            } finally {
+                this.loading = false;
+                this.scrollToBottom();
+            }
+        },
+
+        async confirmTicket() {
+            if (!this.ticketDraft) return;
+            this.loading = true;
+            try {
+                const res = await fetch('https://muhibchy.github.io/Tech-Support/api/ai/ticket/confirm', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    },
+                    body: JSON.stringify({ conversation_id: this.conversationId, ...this.ticketDraft }),
+                });
+                const data = await res.json();
+                this.messages.push({ role: 'assistant', content: data.message, created_at: new Date() });
+                this.showTicketDraft = false;
+                this.ticketDraft = null;
+            } catch (e) {
+                console.error(e);
+            } finally {
+                this.loading = false;
+                this.scrollToBottom();
+            }
+        },
+
+        async escalate() {
+            this.loading = true;
+            try {
+                const res = await fetch('https://muhibchy.github.io/Tech-Support/api/ai/escalate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                    },
+                    body: JSON.stringify({ conversation_id: this.conversationId, reason: 'Customer requested human support' }),
+                });
+                const data = await res.json();
+                this.messages.push({ role: 'assistant', content: data.message, created_at: new Date() });
+                this.showTicketDraft = false;
+            } catch (e) {
+                console.error(e);
+            } finally {
+                this.loading = false;
+                this.scrollToBottom();
+            }
+        },
+
+        formatMessage(text) {
+            if (!text) return '';
+            // Escape HTML first (AI/KB content is untrusted for rendering),
+            // then apply basic markdown: **bold**, bullet points, newlines.
+            const escaped = text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;');
+            return escaped
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\n/g, '<br>');
+        },
+
+        formatTime(time) {
+            if (!time) return '';
+            return new Date(time).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        },
+
+        scrollToBottom() {
+            this.$nextTick(() => {
+                if (this.$refs.messagesContainer) {
+                    this.$refs.messagesContainer.scrollTop = this.$refs.messagesContainer.scrollHeight;
+                }
+            });
+        }
+    };
+}
+</script>
+
+    
+    <script>
+        window.addEventListener('error', function(e) {
+            try {
+                fetch('https://muhibchy.github.io/Tech-Support/api/health/frontend-error', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'X-CSRF-TOKEN': 'vYGqSlUhjkgO5P0t92S2nh1rz7QUgH2S1OyTEMRW' },
+                    body: JSON.stringify({ message: e.message || 'JS Error', url: e.filename || window.location.href, line: e.lineno || null, col: e.colno || null, stack: e.error?.stack || null })
+                });
+            } catch(err) {}
+        });
+    </script>
+<script>(function(){document.querySelectorAll("form").forEach(function(f){var n=f.querySelector(".static-form-notice");if(!n)return;f.addEventListener("submit",function(e){e.preventDefault();n.scrollIntoView({behavior:"smooth",block:"center"});n.style.borderColor="rgba(103,232,249,.7)";});});})();
+</script></body>
+</html>

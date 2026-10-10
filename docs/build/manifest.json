@@ -1,16 +1,20 @@
 {
+  "_three.module-7f93a5dd.js": {
+    "file": "assets/three.module-7f93a5dd.js"
+  },
   "resources/css/app.css": {
-    "file": "assets/app-66af8ea7.css",
+    "file": "assets/app-b9b8482b.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
     "dynamicImports": [
       "resources/js/role-bg.js",
+      "resources/js/solar-system.js",
       "resources/js/hero-3d.js",
       "resources/js/cosmic-bg.js"
     ],
-    "file": "assets/app-bbe5767c.js",
+    "file": "assets/app-b3911664.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
@@ -20,7 +24,10 @@
     "src": "resources/js/cosmic-bg.js"
   },
   "resources/js/hero-3d.js": {
-    "file": "assets/hero-3d-9fbf62cc.js",
+    "file": "assets/hero-3d-60e54a73.js",
+    "imports": [
+      "_three.module-7f93a5dd.js"
+    ],
     "isDynamicEntry": true,
     "src": "resources/js/hero-3d.js"
   },
@@ -28,5 +35,13 @@
     "file": "assets/role-bg-668fbdb3.js",
     "isDynamicEntry": true,
     "src": "resources/js/role-bg.js"
+  },
+  "resources/js/solar-system.js": {
+    "file": "assets/solar-system-b8e36b64.js",
+    "imports": [
+      "_three.module-7f93a5dd.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/solar-system.js"
   }
 }

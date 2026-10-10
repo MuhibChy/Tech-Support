@@ -15,6 +15,17 @@ if (document.getElementById('role-bg-canvas')) {
     });
 }
 
+// Signature 3D solar-system background (fixed, lazy, perf-guarded; §3–§5)
+if (document.getElementById('solar-system-canvas') && !window._solarSystem) {
+    import('./solar-system.js').then(({ default: SolarSystem }) => {
+        if (!window._solarSystem) window._solarSystem = new SolarSystem('solar-system-canvas');
+    }).catch((err) => {
+        console.warn('Solar-system 3D fallback:', err);
+        const fb = document.querySelector('.solar-fallback-bg');
+        if (fb) fb.style.display = 'block';
+    });
+}
+
 if (document.getElementById('hero-canvas') && !window._heroScene) {
     import('./hero-3d.js').then(({ default: HeroScene }) => {
         if (!window._heroScene) window._heroScene = new HeroScene('hero-canvas');

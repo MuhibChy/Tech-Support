@@ -27,7 +27,7 @@
             Join a global team of elite IT professionals protecting enterprises worldwide. We offer competitive compensation, remote flexibility, continuous learning, and the chance to work on cutting-edge infrastructure.
         </p>
         <div class="flex flex-wrap items-center justify-start gap-4">
-            <a href="#positions" class="btn btn-lg text-white rounded-2xl px-8 py-4 font-semibold" style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 10px 35px rgba(37,99,235,0.45);">
+            <a href="#positions" class="btn btn-lg text-white rounded-2xl px-8 py-4 font-semibold btn-brand-gradient" style=" box-shadow: 0 10px 35px rgba(37,99,235,0.45);">
                 View Open Positions
             </a>
             <a href="#culture" class="btn btn-lg btn-glass rounded-2xl px-8 py-4 font-semibold border-white/20 hover:border-cyan-400/50 hover:bg-white/10 transition-all">
@@ -130,7 +130,7 @@
         <p class="text-lg text-slate-300 mb-8 leading-relaxed">
             We are always interested in hearing from exceptional people. Send us your CV and tell us how you can contribute to our mission.
         </p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold btn-brand-gradient" style=" box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
             Send Open Application
         </a>
     </div>

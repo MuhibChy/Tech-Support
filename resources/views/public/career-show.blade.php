@@ -25,7 +25,7 @@
         </div>
         @endif
         <div class="mt-8">
-            <a href="{{ route('contact') }}" class="inline-block px-8 py-3 rounded-2xl text-white font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB);">Apply via Contact</a>
+            <a href="{{ route('contact') }}" class="inline-block px-8 py-3 rounded-2xl text-white font-bold btn-brand-gradient">Apply via Contact</a>
         </div>
     </div>
 </section>

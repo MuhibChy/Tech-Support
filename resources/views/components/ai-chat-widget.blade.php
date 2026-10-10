@@ -26,8 +26,8 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="text-white font-semibold text-sm">AI Support Assistant</h3>
-                    <p class="text-white/70 text-xs">Online • Ready to help</p>
+                    <h3 class="text-white font-semibold text-sm">Support Assistant</h3>
+                    <p class="text-white/70 text-xs">Answers when the service is reachable</p>
                 </div>
             </div>
             <button @click="isOpen = false" class="text-white/70 hover:text-white transition-colors p-1">
@@ -134,7 +134,7 @@ function aiChat() {
         async startConversation() {
             try {
                 this.loading = true;
-                const res = await fetch('/api/ai/conversation', {
+                const res = await fetch('{{ url('/api/ai/conversation') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -153,6 +153,7 @@ function aiChat() {
                 }
             } catch (e) {
                 console.error('Failed to start conversation', e);
+                this.messages.push({ role: 'assistant', content: 'The assistant is unreachable right now. Please use the contact page and our team will respond.', created_at: new Date() });
             } finally {
                 this.loading = false;
             }
@@ -167,7 +168,7 @@ function aiChat() {
             this.loading = true;
 
             try {
-                const res = await fetch('/api/ai/message', {
+                const res = await fetch('{{ url('/api/ai/message') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -188,7 +189,7 @@ function aiChat() {
                     this.showTicketDraft = false;
                 }
             } catch (e) {
-                this.messages.push({ role: 'assistant', content: 'Sorry, something went wrong. Please try again.', created_at: new Date() });
+                this.messages.push({ role: 'assistant', content: 'The assistant is unreachable right now. Please use the contact page and our team will respond.', created_at: new Date() });
             } finally {
                 this.loading = false;
                 this.scrollToBottom();
@@ -199,7 +200,7 @@ function aiChat() {
             if (!this.ticketDraft) return;
             this.loading = true;
             try {
-                const res = await fetch('/api/ai/ticket/confirm', {
+                const res = await fetch('{{ url('/api/ai/ticket/confirm') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -222,7 +223,7 @@ function aiChat() {
         async escalate() {
             this.loading = true;
             try {
-                const res = await fetch('/api/ai/escalate', {
+                const res = await fetch('{{ url('/api/ai/escalate') }}', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

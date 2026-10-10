@@ -60,6 +60,32 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Public Contact Details
+    |--------------------------------------------------------------------------
+    |
+    | Contact details shown on the public website and in the static GitHub
+    | Pages mirror. These MUST be real, owner-verified values configured via
+    | environment variables. When empty, views omit the contact rows instead
+    | of publishing placeholder addresses or phone numbers.
+    |
+    */
+
+    'support_email' => env('SUPPORT_EMAIL'),
+
+    'support_phone' => env('SUPPORT_PHONE'),
+
+    'support_phone_href' => env('SUPPORT_PHONE_HREF'),
+
+    'support_hours' => env('SUPPORT_HOURS', 'Support hours and response times are agreed per service plan.'),
+
+    'social_linkedin' => env('SOCIAL_LINKEDIN'),
+
+    'social_twitter' => env('SOCIAL_TWITTER'),
+
+    'social_github' => env('SOCIAL_GITHUB'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |

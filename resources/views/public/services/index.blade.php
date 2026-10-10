@@ -203,8 +203,8 @@
             </div>
             <div class="flex flex-wrap gap-4">
                 <a href="{{ auth()->check() ? route('portal.service-request.create') : route('login') }}"
-                   class="btn btn-lg text-white rounded-2xl text-sm font-bold"
-                   style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 8px 30px rgba(37,99,235,0.4);">
+                   class="btn btn-lg text-white rounded-2xl text-sm font-bold btn-brand-gradient"
+                   style="box-shadow: 0 8px 30px rgba(37,99,235,0.4);">
                     Order Custom Work
                 </a>
                 <a href="{{ route('contact') }}" class="btn btn-lg btn-glass rounded-2xl text-sm font-semibold">

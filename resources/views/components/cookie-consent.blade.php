@@ -29,8 +29,7 @@
                     Accept Selected
                 </button>
                 <button @click="acceptAll()"
-                        class="px-6 py-3 rounded-xl text-sm font-semibold text-white transition-all hover:scale-105"
-                        style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+                        class="px-6 py-3 rounded-xl text-sm font-semibold text-white transition-all hover:scale-105 btn-brand-gradient">
                     Accept All
                 </button>
             </div>

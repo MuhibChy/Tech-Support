@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', 'Enterprise Pricing & SLA Plans — TechSupport Solutions')
-@section('description', 'Predictable, transparent enterprise IT service plans. Proactive cybersecurity, cloud administration, and dedicated 24/7 SOC infrastructure support.')
+@section('description', 'Predictable, transparent IT service plans. Compare support tiers with response targets agreed per plan.')
 
 @section('content')
 
@@ -17,10 +17,10 @@
                 Transparent SLA Economics
             </div>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-8">
-                Predictable Pricing for <span class="gradient-text-cyber">Uncompromising IT.</span>
+                Predictable Pricing for <span class="gradient-text-cyber">Reliable IT.</span>
             </h1>
             <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal max-w-3xl">
-                Zero ambiguous hourly billing. Choose standardized enterprise support tiers with fixed SLA commitments, continuous proactive SOC monitoring, and scalable engineering capacity.
+                Clear per-plan pricing. Choose the support tier that fits your needs, with response targets and inclusions agreed up front.
             </p>
         </div>
     </div>
@@ -96,8 +96,8 @@
 
         <div class="grid md:grid-cols-2 gap-6">
             @foreach([
-                ['q' => 'How are enterprise SLAs calculated and enforced?', 'a' => 'Our SLAs are backed by contractually guaranteed response times ranging from 15 minutes for critical P1 events to 2 hours for standard P3 requests, monitored live via automated telemetry.'],
-                ['q' => 'Can we customize scope across multi-regional branches?', 'a' => 'Yes. We frequently architect hybrid agreements combining 24/7 centralized SOC coverage with regional localized field dispatch across North America, Europe, and Asia.'],
+                ['q' => 'How are SLAs defined and tracked?', 'a' => 'Response and resolution targets are agreed per service tier in your contract, and ticket progress is tracked in the customer portal. See the SLA page for the tier definitions.'],
+                ['q' => 'Can we customize scope across multiple locations?', 'a' => 'Yes. We can combine remote coverage with on-site options by arrangement. Contact us to scope multi-location support.'],
                 ['q' => 'What is the contract duration and cancellation flexibility?', 'a' => 'We offer both monthly and discounted multi-year master service agreements. All agreements include standard 30-day satisfaction exit terms.'],
                 ['q' => 'Are onboarding audits and infrastructure migrations included?', 'a' => 'Enterprise tiers include a complimentary comprehensive vulnerability audit and onboarding transition blueprint managed by a principal DevOps architect.'],
             ] as $faq)
@@ -120,7 +120,7 @@
     <div class="w-full max-w-4xl mx-auto px-6">
         <h2 class="text-3xl sm:text-5xl font-black text-white mb-6">Need a Specialized Enterprise Quote?</h2>
         <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Our solutions engineering team can configure an exact hybrid package for your infrastructure scale.</p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl" style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white font-bold px-8 py-4 rounded-2xl btn-brand-gradient">
             Request Custom Architecture Proposal
         </a>
     </div>

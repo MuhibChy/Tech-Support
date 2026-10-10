@@ -48,8 +48,7 @@
             {{-- Logo --}}
             <div class="flex items-center gap-3 px-4 h-16 border-b border-white/10">
                 <a href="{{ auth()->user() && auth()->user()->isCustomer() ? route('portal.dashboard') : route('admin.dashboard') }}" class="flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg"
-                         style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+                    <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg btn-brand-gradient">
                         <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
                     <span x-show="!collapsed" x-transition class="font-bold text-lg text-white whitespace-nowrap">TechSupport</span>

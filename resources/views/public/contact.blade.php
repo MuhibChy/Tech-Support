@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
-@section('title', 'Direct Infrastructure & SOC Contact — TechSupport Solutions')
-@section('description', 'Connect with our senior cybersecurity engineers, solutions architects, and 24/7 technical operations center.')
+@section('title', 'Contact Our Engineering Team — TechSupport Solutions')
+@section('description', 'Request a consultation with our IT engineers and solutions team. Submit the form and we will respond according to your service plan.')
 
 @section('content')
 
@@ -14,13 +14,13 @@
         <div class="max-w-4xl">
             <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold uppercase tracking-widest text-cyan-300 mb-6">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-                24/7 Global Communications Gateway
+                Request a Consultation
             </div>
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05] mb-8">
-                Connect Directly with <span class="gradient-text-cyber">Our Engineering Team.</span>
+                Connect with <span class="gradient-text-cyber">Our Engineering Team.</span>
             </h1>
             <p class="text-lg sm:text-xl text-slate-300 leading-relaxed font-normal max-w-3xl">
-                Whether requesting an immediate threat assessment, migrating cloud infrastructure, or configuring enterprise SLA support, our team is standing by.
+                Whether you need a security assessment, a cloud migration plan, or ongoing IT support, send us the details and we will respond according to your service plan.
             </p>
         </div>
     </div>
@@ -34,8 +34,8 @@
             {{-- Form Column --}}
             <div class="lg:col-span-8">
                 <div class="cosmic-glass p-8 sm:p-12 rounded-3xl border border-white/10">
-                    <h2 class="text-2xl sm:text-3xl font-black text-white mb-2">Initiate Technical Consultation</h2>
-                    <p class="text-sm text-slate-400 mb-8">Fill out the parameters below and a principal architect will reach out within 2 hours.</p>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white mb-2">Request a Consultation</h2>
+                    <p class="text-sm text-slate-400 mb-8">Fill out the details below and our team will get back to you.</p>
 
                     <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6">
                         @csrf
@@ -62,7 +62,7 @@
                             </div>
                             <div>
                                 <label class="block text-xs font-mono uppercase tracking-widest text-slate-300 mb-2">Direct Phone</label>
-                                <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="+1 (555) 000-0000"
+                                <input type="tel" name="phone" value="{{ old('phone') }}" placeholder="Your contact number"
                                        class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-black/40 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/20 text-sm">
                             </div>
                         </div>
@@ -70,11 +70,11 @@
                         <div>
                             <label class="block text-xs font-mono uppercase tracking-widest text-slate-300 mb-2">Primary Consultation Focus *</label>
                             <select name="subject" class="w-full px-4 py-3.5 rounded-xl border border-white/10 bg-[#040816] text-white focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-500/20 text-sm">
-                                <option value="cybersecurity">Cybersecurity Architecture & Penetration Audit</option>
-                                <option value="managed-it">Managed IT Infrastructure & 24/7 SOC</option>
-                                <option value="cloud">Cloud Migration & Multi-Cloud DevOps</option>
-                                <option value="general">Custom Enterprise Work Order / Quote</option>
-                                <option value="support">Active Contract SLA Escalation</option>
+                                <option value="cybersecurity">Cybersecurity Assessment & Hardening</option>
+                                <option value="managed-it">Managed IT Infrastructure & Support</option>
+                                <option value="cloud">Cloud Migration & DevOps</option>
+                                <option value="general">Custom Work Order / Quote</option>
+                                <option value="support">Existing Contract Support Request</option>
                             </select>
                         </div>
 
@@ -87,8 +87,7 @@
                         </div>
 
                         <button type="submit"
-                                class="btn btn-lg text-white font-bold text-sm px-8 py-4 rounded-xl transition-all shadow-lg shadow-cyan-500/30 hover:scale-[1.02]"
-                                style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+                                class="btn btn-lg text-white font-bold text-sm px-8 py-4 rounded-xl transition-all shadow-lg shadow-cyan-500/30 hover:scale-[1.02] btn-brand-gradient">
                             Submit Request to Engineering
                             <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
                         </button>
@@ -101,29 +100,34 @@
                 <div class="cosmic-card p-8">
                     <div class="text-xs font-mono uppercase tracking-widest text-cyan-400 mb-4 flex items-center gap-2">
                         <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
-                        Emergency SOC Dispatch
+                        Priority Support
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Critical Incident Response</h3>
+                    <h3 class="text-xl font-bold text-white mb-2">Existing Customers</h3>
                     <p class="text-xs text-slate-400 leading-relaxed mb-6">
-                        Under active attack or experiencing severe downtime? Our SOC tier-1 dispatch hotline is active 24/7/365 with immediate engineer escalation.
+                        If you have an active service plan, sign in to the customer portal to open or escalate a ticket — requests are handled under your agreed SLA.
                     </p>
-                    <div class="p-4 rounded-xl bg-cyan-500/10 border border-cyan-500/20 font-mono text-cyan-300 text-sm font-bold">
-                        +1 (800) 555-TECH-SOC
+                    <div class="flex flex-wrap gap-3">
+                        <a href="{{ route('login') }}" class="text-xs font-bold px-4 py-2.5 rounded-xl bg-cyan-500 text-black hover:bg-cyan-400 transition-colors">Customer Login</a>
+                        <a href="{{ route('get-quote') }}" class="text-xs font-bold px-4 py-2.5 rounded-xl border border-cyan-400/40 text-cyan-300 hover:bg-cyan-500 hover:text-black transition-all">Get a Quote</a>
                     </div>
                 </div>
 
                 <div class="cosmic-card p-8 space-y-6">
+                    @if(config('app.support_email'))
                     <div>
-                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Corporate Dispatch</div>
-                        <div class="text-base font-bold text-white">ops@techsupportsolutions.com</div>
+                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Email</div>
+                        <div class="text-base font-bold text-white"><a href="mailto:{{ config('app.support_email') }}" class="hover:text-cyan-300 transition-colors">{{ config('app.support_email') }}</a></div>
                     </div>
+                    @endif
+                    @if(config('app.support_phone'))
                     <div class="border-t border-white/10 pt-4">
-                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Guaranteed Response</div>
-                        <div class="text-sm font-bold text-emerald-400">Under 15 Minutes for P1 Tickets</div>
+                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Phone</div>
+                        <div class="text-base font-bold text-white">{{ config('app.support_phone') }}</div>
                     </div>
+                    @endif
                     <div class="border-t border-white/10 pt-4">
-                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Headquarters</div>
-                        <div class="text-sm text-slate-300">Level 42, Cyber Tower One, Technology Corridor</div>
+                        <div class="text-xs font-mono text-slate-400 uppercase tracking-wider mb-1">Response</div>
+                        <div class="text-sm font-bold text-emerald-400">{{ config('app.support_hours') }}</div>
                     </div>
                 </div>
             </div>

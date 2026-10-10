@@ -26,7 +26,7 @@
                        placeholder="••••••">
                 @error('code') <p class="mt-1 text-sm text-red-400">{{ $message }}</p> @enderror
             </div>
-            <button type="submit" class="w-full px-8 py-3 rounded-2xl text-white font-bold transition-all hover:scale-[1.02]" style="background: linear-gradient(135deg, #16A34A, #2563EB);">Verify &amp; Continue</button>
+            <button type="submit" class="w-full px-8 py-3 rounded-2xl text-white font-bold transition-all hover:scale-[1.02] btn-brand-gradient">Verify &amp; Continue</button>
         </form>
         <form method="POST" action="{{ route('logout') }}" class="mt-4 text-center">
             @csrf

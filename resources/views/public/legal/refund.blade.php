@@ -77,17 +77,14 @@
                 <div>
                     <h2 class="text-xl font-bold text-white mb-3">8. Dispute Resolution</h2>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        If you disagree with our refund decision, you may escalate the matter to our senior management team at <strong class="text-white">complaints@techsupport.com</strong>. We aim to resolve all disputes amicably within 20 business days.
+                        If you disagree with our refund decision, you may escalate the matter through the customer portal or the contact page. We aim to resolve all disputes amicably within 20 business days.
                     </p>
                 </div>
 
                 <div>
                     <h2 class="text-xl font-bold text-white mb-3">9. Contact Information</h2>
                     <p class="text-sm text-slate-300 leading-relaxed">
-                        For any questions about this Refund Policy, please contact us at:<br>
-                        <strong class="text-white">Email:</strong> billing@techsupport.com<br>
-                        <strong class="text-white">Phone:</strong> +1 (555) 123-4567<br>
-                        <strong class="text-white">Address:</strong> TechSupport Solutions, 123 Tech Avenue, San Francisco, CA 94105, USA
+                        For any questions about this Refund Policy, please reach us through the customer portal or the contact page.
                     </p>
                 </div>
 

@@ -33,7 +33,7 @@
                        placeholder="••••••">
                 @error('code') <p class="mt-1 text-sm text-red-400">{{ $message }}</p> @enderror
             </div>
-            <button type="submit" class="w-full px-8 py-3 rounded-2xl text-white font-bold transition-all hover:scale-[1.02]" style="background: linear-gradient(135deg, #16A34A, #2563EB);">Enable Two-Factor</button>
+            <button type="submit" class="w-full px-8 py-3 rounded-2xl text-white font-bold transition-all hover:scale-[1.02] btn-brand-gradient">Enable Two-Factor</button>
         </form>
         @if($enabled)
         <form method="POST" action="{{ route('mfa.disable') }}" class="mt-4 space-y-4">

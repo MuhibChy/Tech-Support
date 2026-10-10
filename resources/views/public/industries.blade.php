@@ -31,19 +31,19 @@
             @foreach([
                 [
                     'name' => 'Healthcare & Life Sciences',
-                    'desc' => 'HIPAA-compliant IT infrastructure, secure patient data management, telemedicine platforms, and clinical system support.',
+                    'desc' => 'Secure IT infrastructure with careful patient-data handling, telemedicine platform support, and clinical system assistance.',
                     'icon' => 'M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z',
                     'color' => 'text-rose-400',
                     'bg' => 'bg-rose-500/10 border-rose-500/20',
-                    'tags' => ['HIPAA', 'EHR Systems', 'Telemedicine', 'Data Security'],
+                    'tags' => ['Data Protection', 'EHR Systems', 'Telemedicine', 'Data Security'],
                 ],
                 [
                     'name' => 'Financial Services & FinTech',
-                    'desc' => 'PCI-DSS compliance, real-time fraud detection, secure payment gateways, and regulatory reporting systems.',
+                    'desc' => 'Secure payment workflows, fraud-awareness reviews, and reporting systems built with data protection in mind.',
                     'icon' => 'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
                     'color' => 'text-emerald-400',
                     'bg' => 'bg-emerald-500/10 border-emerald-500/20',
-                    'tags' => ['PCI-DSS', 'Fraud Detection', 'Payment Security', 'RegTech'],
+                    'tags' => ['Payment Security', 'Fraud Awareness', 'Reporting', 'RegTech'],
                 ],
                 [
                     'name' => 'E-Commerce & Retail',
@@ -59,7 +59,7 @@
                     'icon' => 'M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253',
                     'color' => 'text-blue-400',
                     'bg' => 'bg-blue-500/10 border-blue-500/20',
-                    'tags' => ['LMS', 'FERPA', 'Virtual Classrooms', 'Campus IT'],
+                    'tags' => ['LMS', 'Student Privacy', 'Virtual Classrooms', 'Campus IT'],
                 ],
                 [
                     'name' => 'Manufacturing & Industrial',
@@ -71,11 +71,11 @@
                 ],
                 [
                     'name' => 'Government & Public Sector',
-                    'desc' => 'FedRAMP compliance, classified network security, citizen data protection, and critical infrastructure defence.',
+                    'desc' => 'Secure network practices, citizen data protection, and critical infrastructure support.',
                     'icon' => 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
                     'color' => 'text-cyan-400',
                     'bg' => 'bg-cyan-500/10 border-cyan-500/20',
-                    'tags' => ['FedRAMP', 'Classified', 'Critical Infrastructure', 'Zero Trust'],
+                    'tags' => ['Data Protection', 'Secure Networks', 'Critical Infrastructure', 'Zero Trust'],
                 ],
                 [
                     'name' => 'Legal & Professional Services',
@@ -131,7 +131,7 @@
         <p class="text-lg text-slate-300 mb-8 leading-relaxed">
             Contact us for a free consultation on how our solutions can meet your industry's unique compliance, security, and operational requirements.
         </p>
-        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB); box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
+        <a href="{{ route('contact') }}" class="btn btn-lg text-white rounded-2xl px-10 py-5 font-bold btn-brand-gradient" style=" box-shadow: 0 12px 40px rgba(37,99,235,0.5);">
             Schedule Industry Consultation
         </a>
     </div>

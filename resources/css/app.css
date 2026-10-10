@@ -9,6 +9,51 @@
    ═══════════════════════════════════════════════════════════════ */
 
 :root {
+    /* ── Premium glassmorphism design tokens (spec §2) ── */
+    --glass-bg: rgba(255, 255, 255, 0.06);
+    --glass-bg-strong: rgba(12, 12, 14, 0.72);
+    --glass-border: rgba(255, 255, 255, 0.14);
+    --glass-blur: 24px;
+    --glass-shadow: 0 16px 45px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    --surface-primary: #000000;
+    --surface-secondary: #0a0a0a;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --accent: #ffffff;
+    --accent-glow: rgba(255, 255, 255, 0.35);
+
+    /* Per-surface glass intensities: nav / hero / cards / dashboard / modal / pricing / forms */
+    --glass-nav: rgba(0, 0, 0, 0.72);
+    --glass-hero: rgba(10, 10, 12, 0.62);
+    --glass-card: rgba(255, 255, 255, 0.05);
+    --glass-dashboard: rgba(12, 12, 16, 0.78);
+    --glass-modal: rgba(8, 8, 12, 0.88);
+    --glass-pricing: rgba(255, 255, 255, 0.07);
+    --glass-form: rgba(255, 255, 255, 0.04);
+}
+
+/* Light mode: premium white/neutral glass, same content visible (§33) */
+html:not(.dark) {
+    --glass-bg: rgba(255, 255, 255, 0.62);
+    --glass-bg-strong: rgba(255, 255, 255, 0.82);
+    --glass-border: rgba(15, 23, 42, 0.12);
+    --glass-shadow: 0 18px 45px rgba(15, 23, 42, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    --surface-primary: #ffffff;
+    --surface-secondary: #f6f7f9;
+    --text-primary: #0b1220;
+    --text-secondary: #475569;
+    --accent: #111827;
+    --accent-glow: rgba(17, 24, 39, 0.18);
+    --glass-nav: rgba(255, 255, 255, 0.78);
+    --glass-hero: rgba(255, 255, 255, 0.7);
+    --glass-card: rgba(255, 255, 255, 0.66);
+    --glass-dashboard: rgba(255, 255, 255, 0.85);
+    --glass-modal: rgba(255, 255, 255, 0.94);
+    --glass-pricing: rgba(255, 255, 255, 0.72);
+    --glass-form: rgba(255, 255, 255, 0.6);
+}
+
+:root {
     --green-primary: #FFFFFF;
     --green-dark: #CCCCCC;
     --green-deep: #888888;
@@ -282,6 +327,16 @@ body[data-lights='app'] .pl-c { left: 34vw; bottom: -16vmax; background: radial-
 
     .btn-lg {
         @apply px-8 py-4 text-base;
+    }
+
+    /* ─── Brand gradient (single source of truth for #16A34A → #2563EB) ─── */
+    .btn-brand-gradient {
+        background: linear-gradient(135deg, #16A34A, #2563EB);
+        color: #fff;
+    }
+    .btn-brand-gradient:hover {
+        background: linear-gradient(135deg, #15803d, #1d4ed8);
+        color: #fff;
     }
 
     .btn-sm {
@@ -1000,6 +1055,48 @@ body[data-rolebg='login']    { --role-aura: rgba(255, 255, 255, 0.05); }
 body.role-bg-static #role-bg-canvas { display: none; }
 
 /* ═══════════════════════════════════════════════════════════════
+   3D SOLAR-SYSTEM BACKGROUND SIGNATURE (§3) — fixed, behind content,
+   never intercepts pointer; static cosmic fallback when WebGL off.
+   ═══════════════════════════════════════════════════════════════ */
+#solar-system-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    opacity: 0.9;
+}
+.solar-fallback-bg {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(ellipse 45% 45% at 72% 30%, rgba(255, 255, 255, 0.07) 0%, transparent 65%),
+        radial-gradient(ellipse 35% 35% at 20% 70%, rgba(200, 200, 200, 0.05) 0%, transparent 60%),
+        radial-gradient(circle at 50% 50%, #0b0b0f 0%, #030304 60%, #000000 100%);
+}
+html:not(.dark) #solar-system-canvas { opacity: 0.35; }
+html:not(.dark) .solar-fallback-bg {
+    background:
+        radial-gradient(ellipse 45% 45% at 72% 30%, rgba(17, 24, 39, 0.06) 0%, transparent 65%),
+        radial-gradient(ellipse 35% 35% at 20% 70%, rgba(17, 24, 39, 0.04) 0%, transparent 60%),
+        linear-gradient(to bottom, #f8fafc 0%, #eef2f7 60%, #e6ebf2 100%);
+}
+html:not(.dark) .nav-premium {
+    background: var(--glass-nav);
+    border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+}
+@media (max-width: 640px) {
+    #solar-system-canvas { opacity: 0.65; }
+}
+@media (prefers-reduced-motion: reduce) {
+    #solar-system-canvas { display: none; }
+    .solar-fallback-bg { display: block !important; }
+}
+
+/* ═══════════════════════════════════════════════════════════════
    GLOBAL SPACE BACKGROUND (Monochrome)
    ═══════════════════════════════════════════════════════════════ */
 
@@ -1130,15 +1227,4 @@ body.role-bg-static #role-bg-canvas { display: none; }
     to { opacity: 1; }
 }
 
-.dark section[class*='bg-[#030712]']:not(.sticky),
-.dark section[class*='bg-[#020617]']:not(.sticky),
-.dark section[class*='bg-[#040816]']:not(.sticky) {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-.dark section[class*='bg-navy-900'],
-.dark section[class*='bg-navy-950'] {
-    background-color: rgba(5, 5, 5, 0.9);
-}
-.dark footer[class*='bg-[#040816]'] {
-    background-color: rgba(0, 0, 0, 0.86);
-}
+

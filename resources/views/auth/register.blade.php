@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Create Enterprise Account — TechSupport Solutions</title>
+    <meta name="description" content="Create a customer account to request quotes, open tickets and track orders, tasks, invoices and payments.">
+    <meta name="robots" content="noindex, follow">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -33,8 +35,7 @@
         {{-- Logo & Brand Header --}}
         <div class="text-center mb-8">
             <a href="{{ route('home') }}" class="inline-flex items-center gap-3 group mb-4">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg transition-transform group-hover:scale-105"
-                     style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg transition-transform group-hover:scale-105 btn-brand-gradient">
                     <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
@@ -94,8 +95,7 @@
             </p>
 
             <button type="submit"
-                    class="btn w-full py-4 text-center rounded-xl text-sm font-bold text-white transition-all shadow-lg shadow-brand-600/40 hover:scale-[1.02] mt-4"
-                    style="background: linear-gradient(135deg, #16A34A, #2563EB);">
+                    class="btn w-full py-4 text-center rounded-xl text-sm font-bold text-white transition-all shadow-lg shadow-brand-600/40 hover:scale-[1.02] mt-4 btn-brand-gradient">
                 Create Enterprise Profile
             </button>
         </form>

@@ -30,9 +30,10 @@ class RoleThemeTest extends TestCase
     /** @test */
     public function green_blue_brand_identity_is_present()
     {
-        // Green + blue primary CTA gradient on auth + quote surfaces.
-        $this->get(route('login'))->assertSee('linear-gradient(135deg, #16A34A, #2563EB)', false);
-        $this->get(route('get-quote'))->assertSee('linear-gradient(135deg, #16A34A, #2563EB)', false);
+        // Green + blue primary CTA gradient on auth + quote surfaces
+        // (applied via the shared .btn-brand-gradient theme class).
+        $this->get(route('login'))->assertSee('btn-brand-gradient', false);
+        $this->get(route('get-quote'))->assertSee('btn-brand-gradient', false);
         // Compiled theme tokens carry both brand scales (built CSS artifact).
         $css = collect(glob(public_path('build/assets/*.css')))
             ->map(fn ($f) => file_get_contents($f))->join("\n");

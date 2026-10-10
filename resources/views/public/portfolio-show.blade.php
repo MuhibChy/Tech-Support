@@ -15,7 +15,7 @@
         @if($item->summary)<p class="text-lg text-slate-300 mb-8">{{ $item->summary }}</p>@endif
         @if($item->description)<div class="cosmic-glass p-8 rounded-3xl border border-white/10 text-slate-300 whitespace-pre-line">{{ $item->description }}</div>@endif
         @if($item->project_url)
-        <a href="{{ $item->project_url }}" target="_blank" rel="noopener" class="inline-block mt-6 px-8 py-3 rounded-2xl text-white font-bold" style="background: linear-gradient(135deg, #16A34A, #2563EB);">Visit Live Project</a>
+        <a href="{{ $item->project_url }}" target="_blank" rel="noopener" class="inline-block mt-6 px-8 py-3 rounded-2xl text-white font-bold btn-brand-gradient">Visit Live Project</a>
         @endif
         <div class="mt-8">
             <a href="{{ route('get-quote') }}" class="text-cyan-400 hover:text-cyan-300 font-semibold">Want results like these? Get a quote &rarr;</a>

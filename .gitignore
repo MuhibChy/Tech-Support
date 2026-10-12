@@ -15,8 +15,6 @@
 
 # Storage and logs
 /storage/*.key
-/storage/framework/
-/storage/logs/
 /storage/app/private/
 /storage/app/public/
 /storage/app/backups/

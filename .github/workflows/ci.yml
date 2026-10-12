@@ -17,7 +17,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.0'
-          extensions: mbstring, xml, ctype, json, bcmath, pdo, sqlite
+          extensions: mbstring, xml, ctype, json, bcmath, pdo, sqlite, sqlite3, pdo_sqlite, openssl, tokenizer, fileinfo, curl
           coverage: none
 
       - name: Setup Node.js
@@ -34,6 +34,12 @@ jobs:
       - name: Build Frontend Assets
         run: npm run build
 
+      - name: Prepare Storage Directories
+        run: |
+          mkdir -p storage/framework/cache/data storage/framework/sessions storage/framework/testing storage/framework/views storage/logs storage/app/public
+          chmod -R 775 storage bootstrap/cache
+          test -d storage/framework/views || (echo 'storage skeleton missing' && exit 1)
+
       - name: Prepare Environment
         run: |
           cp .env.example .env
@@ -48,3 +54,4 @@ jobs:
 
       - name: Execute Tests
         run: php artisan test
+
